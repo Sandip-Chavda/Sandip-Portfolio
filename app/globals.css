@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  --line-color: #e5e7eb;
+}
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+.borderBlack {
+  @apply border border-black/10;
+}
+
+/* Create Custom Scrollbar */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #222831 #222831;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff00;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #ffffff00;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #ffffff00;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #ffffff4f;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffffbb;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .query {
+    position: absolute;
+    top: 80%;
+    right: 0.7rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+  }
+}
